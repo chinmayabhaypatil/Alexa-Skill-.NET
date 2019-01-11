@@ -1,0 +1,171 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "alpha banking",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CheckBalance",
+                    "slots": [],
+                    "samples": [
+                        "check my balance"
+                    ]
+                },
+                {
+                    "name": "WithdrawMoney",
+                    "slots": [
+                        {
+                            "name": "amount",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "withdraw {amount} rupees from my account"
+                    ]
+                },
+                {
+                    "name": "DepositMoney",
+                    "slots": [
+                        {
+                            "name": "amount",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "deposit {amount} rupees to my account"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "logout",
+                        "no just log me out"
+                    ]
+                },
+                {
+                    "name": "BuyIntent",
+                    "slots": [
+                        {
+                            "name": "buyitem",
+                            "type": "buyitem"
+                        }
+                    ],
+                    "samples": [
+                        "buy {buyitem} from amazon store"
+                    ]
+                },
+                {
+                    "name": "TransactionIntent",
+                    "slots": [],
+                    "samples": [
+                        "what are my recent transactions",
+                        "give me my recent transactions",
+                        "give me my transaction history",
+                        "give me my recent transaction history"
+                    ]
+                },
+                {
+                    "name": "DetailsIntent",
+                    "slots": [],
+                    "samples": [
+                        "give me account details",
+                        "get my acccount details",
+                        "give me my account details"
+                    ]
+                },
+                {
+                    "name": "LastDaysIntent",
+                    "slots": [
+                        {
+                            "name": "days",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "how much did i spend in past {days} days on amazon store",
+                        "how much did i spend in past {days} days on amazon",
+                        "how much did i spend in last {days} days on amazon store",
+                        "how much did i spend in last {days} days on amazon"
+                    ]
+                },
+                {
+                    "name": "TransferIntent",
+                    "slots": [
+                        {
+                            "name": "amount",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "accountnumber",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "transfer {amount} rupees to account with account number {accountnumber}",
+                        "transfer {amount} rupees to account number {accountnumber}",
+                        "transfer {amount} rupees to account {accountnumber}"
+                    ]
+                },
+                {
+                    "name": "PinIntent",
+                    "slots": [
+                        {
+                            "name": "pin",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "my pin is {pin}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "buyitem",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "rice"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "car"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mobile"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
